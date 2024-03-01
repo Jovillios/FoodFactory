@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include "BurgerFactory.h"
 #include "FoodFactory.h"
 #include "PizzaFactory.h"
@@ -29,23 +28,5 @@ int main() {
     // Cleaning
     std::cout << "End of main program- destroying heap objects" << std::endl;
     std::cout << "End of main program- destroying stack objects" << std::endl;
-=======
-#include "PizzaFactory.h"
-#include "SushiFactory.h"
-#include <iostream>
-
-int main() {
-    // Create a PizzaFactory object
-    PizzaFactory pizzaFactory;
-
-    // Create a Pizza object using the factory
-    auto pizza = pizzaFactory.create();
-
-    // Use the PizzaFactory to deliver the pizza
-    pizzaFactory.deliver(std::move(pizza));
-
-    std::cout << "Pizza has been prepared and delivered." << std::endl;
-
->>>>>>> 4ae679a959c1dc37759818b088c81f06fac853b7
     return 0;
 }
