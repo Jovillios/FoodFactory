@@ -1,9 +1,9 @@
 #ifndef PIZZA_H
 #define PIZZA_H
 
-#include "Food.h"
+#include "iFood.h"
 
-class Pizza : public Food {
+class Pizza : public IFood {
 public:
     void prepare() override;
     void pack() override;
