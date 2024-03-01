@@ -3,6 +3,7 @@
 *.out
 *.exe
 *.app
+main
 
 # dev
 .vscode
