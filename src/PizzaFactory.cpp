@@ -1,6 +1,8 @@
 #include "PizzaFactory.h"
 #include "Pizza.h"
 
-std::unique_ptr<IFood> PizzaFactory::create() {
-    return std::make_unique<Pizza>();
+IFood* PizzaFactory::create() {
+    IFood* pizza = new Pizza();
+    pizza->prepare();
+    return pizza;
 }

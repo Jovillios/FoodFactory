@@ -6,8 +6,8 @@
 
 class FoodFactory {
 public:
-    virtual std::unique_ptr<IFood> create() = 0;
-    void deliver(std::unique_ptr<IFood> food);
+    virtual IFood* create() = 0;
+    void deliver(IFood* food);
     virtual ~FoodFactory() {}
 };
 
