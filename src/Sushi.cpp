@@ -2,9 +2,9 @@
 #include <iostream>
 
 void Sushi::prepare() {
-    std::cout << "Preparing Sushi" << std::endl;
+    std::cout << "Preparing Sushi 🍣" << std::endl;
 }
 
 void Sushi::pack() {
-    std::cout << "Packing Sushi" << std::endl;
+    std::cout << "Packing Sushi 🍣📦" << std::endl;
 }
