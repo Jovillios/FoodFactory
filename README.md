@@ -1,3 +1,3 @@
 # FoodFactory - An implementation of the factory design pattern 
 
-[[img/food_factory.png]]
+![Food Factory](img/food_factory.png)
