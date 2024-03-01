@@ -7,7 +7,7 @@ int main() {
     PizzaFactory pizzaFactory;
 
     // Create a Pizza object using the factory
-    auto pizza = pizzaFactory.create();
+    IFood* pizza = pizzaFactory.create();
 
     // Use the PizzaFactory to deliver the pizza
     pizzaFactory.deliver(std::move(pizza));

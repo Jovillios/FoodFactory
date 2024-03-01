@@ -5,7 +5,7 @@
 
 class SushiFactory : public FoodFactory {
 public:
-    std::unique_ptr<IFood> create() override;
+    IFood* create() override;
 };
 
 #endif // SUSHIFACTORY_H
