@@ -5,6 +5,10 @@
 
 class PizzaFactory : public FoodFactory {
 public:
+    /*
+    Returns a Pizza as Food.
+    When overriding this function, make sure you return a Pizza.
+    */
     std::unique_ptr<IFood> create() override;
 };
 
