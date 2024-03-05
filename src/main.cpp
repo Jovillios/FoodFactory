@@ -8,24 +8,28 @@
 
 int main() {
     std::cout << "Launching the main program" << std::endl;
+    std::cout << std::endl;
 
     // Creating Factories
     std::cout << "Creating food factories" << std::endl;
     PizzaFactory pizzeria;
     BurgerFactory domac;
     SushiFactory sushishop;
+    std::cout << std::endl;
 
     // Creating some food
     std::cout << "Creating food" << std::endl;
     std::unique_ptr<IFood> pizza = pizzeria.create();
     std::unique_ptr<IFood> bigmac = domac.create();
     std::unique_ptr<IFood> californien = sushishop.create();
+    std::cout << std::endl;
 
     // Packing and delivering the food
     std::cout << "Packing and delivering..." << std::endl;
     pizzeria.deliver(std::move(pizza));
     domac.deliver(std::move(bigmac));
     sushishop.deliver(std::move(californien));
+    std::cout << std::endl;
 
     // Now with pointers, vectors and loops
     std::cout << "Creating more factories" << std::endl;
@@ -35,11 +39,14 @@ int main() {
         factories.push_back(std::unique_ptr<FoodFactory>(new SushiFactory()));
         factories.push_back(std::unique_ptr<FoodFactory>(new BurgerFactory()));
     }
+    std::cout << std::endl;
 
     std::cout << "MOOOORE FOOOD" << std::endl;
+    std::cout << std::endl;
     for (auto &factory : factories) {
         for (int i = 0; i < 5; i++) {
             factory->deliver(factory->create());
+            std::cout << std::endl;
         }
     }
 
