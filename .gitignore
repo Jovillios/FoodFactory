@@ -7,6 +7,7 @@ main
 
 # dev
 .vscode
+.git
 
 # Mac
 .DS_Store
