@@ -11,4 +11,6 @@ main
 # Mac
 .DS_Store
 
+# Git
+.git
 
